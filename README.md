@@ -31,4 +31,4 @@ doom-spotify-mood-detector/
 ├── recommendation.py    # Python file for song mood analysis and recommendation
 ├── manifest.json        # Chrome Extension manifest
 ├── package.json         # Project dependencies
-├── README.md            # Documentation.
+├── README.md            # Documentation
