@@ -15,7 +15,7 @@
 - **Backend**: Node.js, Express, Python
 - **APIs**: Spotify API, Echo Nest API
 - **Database**: MongoDB (for storing user preferences)
-- **Version Control**: Git.
+- **Version Control**: Git
 
 ## Project Structure
 ```bash
