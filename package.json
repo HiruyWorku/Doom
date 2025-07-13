@@ -1,0 +1,27 @@
+{
+  "name": "doom-spotify-mood-detector",
+  "version": "1.0.0",
+  "description": "A web application that analyzes Spotify music and provides mood-based recommendations",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["spotify", "mood", "music", "recommendations", "flask", "python"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2",
+    "@types/node": "^20.6.0",
+    "@types/express": "^4.17.17"
+  }
+} 

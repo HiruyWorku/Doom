@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom - Spotify Mood Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <i class="fab fa-spotify"></i>
+                    <h1>Doom</h1>
+                </div>
+                <h2>Discover Your Music Mood</h2>
+                <p class="hero-description">
+                    Connect your Spotify account and let our AI analyze your listening patterns 
+                    to understand your musical mood and discover perfect recommendations.
+                </p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-brain"></i>
+                        <h3>Mood Analysis</h3>
+                        <p>AI-powered analysis of your music's emotional characteristics</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-music"></i>
+                        <h3>Smart Recommendations</h3>
+                        <p>Get personalized song suggestions based on your mood</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Listening Insights</h3>
+                        <p>Understand your music preferences and patterns</p>
+                    </div>
+                </div>
+                
+                <a href="{{ url_for('demo_dashboard') }}" class="cta-button">
+                    <i class="fab fa-spotify"></i>
+                    View Demo Dashboard
+                </a>
+            </div>
+        </header>
+        
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect</h3>
+                    <p>Securely connect your Spotify account with one click</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Analyze</h3>
+                    <p>Our AI analyzes your recent tracks and audio features</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Discover</h3>
+                    <p>Get personalized recommendations based on your mood</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Doom - Spotify Mood Detector. Made with ❤️ for music lovers.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,494 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(30, 30, 46, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: #1DB954;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a.active {
+    background: rgba(29, 185, 84, 0.2);
+    color: #1DB954;
+}
+
+.logout-btn {
+    color: #ff6b6b !important;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 107, 107, 0.2) !important;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #b8b8b8;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(29, 185, 84, 0.3);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #1DB954;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.feature p {
+    color: #b8b8b8;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(29, 185, 84, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(29, 185, 84, 0.4);
+    color: white;
+}
+
+/* How it works section */
+.how-it-works {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.step {
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.step p {
+    color: #b8b8b8;
+    line-height: 1.6;
+}
+
+/* Dashboard styles */
+.dashboard-header {
+    padding: 60px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.mood-summary h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.current-mood {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.current-mood i {
+    font-size: 2rem;
+    color: #1DB954;
+}
+
+.mood-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1DB954;
+}
+
+.dashboard-content {
+    display: grid;
+    gap: 40px;
+}
+
+.recent-tracks, .recommendations {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recent-tracks h2, .recommendations h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.recent-tracks h2 i, .recommendations h2 i {
+    color: #1DB954;
+}
+
+.tracks-grid, .recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.track-card, .recommendation-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.track-card:hover, .recommendation-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(29, 185, 84, 0.3);
+    transform: translateY(-2px);
+}
+
+.track-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.artist {
+    color: #1DB954;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.album {
+    color: #b8b8b8;
+    font-size: 0.9rem;
+}
+
+.track-mood {
+    margin: 15px 0;
+}
+
+.mood-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mood-happy-and-energetic {
+    background: rgba(29, 185, 84, 0.2);
+    color: #1DB954;
+}
+
+.mood-chill-and-uplifting {
+    background: rgba(100, 149, 237, 0.2);
+    color: #6495ed;
+}
+
+.mood-sad-or-melancholic {
+    background: rgba(138, 43, 226, 0.2);
+    color: #8a2be2;
+}
+
+.mood-danceable-and-upbeat {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+}
+
+.mood-ambient-or-acoustic {
+    background: rgba(34, 139, 34, 0.2);
+    color: #228b22;
+}
+
+.mood-neutral-or-mixed-mood {
+    background: rgba(128, 128, 128, 0.2);
+    color: #808080;
+}
+
+.track-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.play-btn, .spotify-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.play-btn {
+    background: #1DB954;
+    color: white;
+}
+
+.play-btn:hover {
+    background: #1ed760;
+    transform: scale(1.1);
+}
+
+.spotify-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #1DB954;
+}
+
+.spotify-btn:hover {
+    background: rgba(29, 185, 84, 0.2);
+    transform: scale(1.1);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #b8b8b8;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #1DB954;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #b8b8b8;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .tracks-grid, .recommendations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.track-card, .recommendation-card, .feature {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #1DB954;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
