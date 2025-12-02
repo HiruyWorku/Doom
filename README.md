@@ -1,5 +1,5 @@
 # Doom — Spotify Mood Detector
-Doom is a web application that analyzes your Spotify listening patterns and generates mood-based music recommendations using Spotify’s audio features and intelligent mood classification.
+Doom is a web application that analyzes your Spotify listening patterns and generates mood-based music recommendations using Spotify’s audio features and intelligent mood classification
 ## Features
 - **Mood Analysis** — Interprets emotional characteristics of your music using Spotify audio feature data
 - **Personalized Recommendations** — Suggests songs aligned with your detected mood
